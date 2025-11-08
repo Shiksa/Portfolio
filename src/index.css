@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import "tailwindcss";
 
+/* -----------------------------------------
+  Tailwind v4 theme configuration
+  (Converted from your JS config)
+------------------------------------------ */
 @theme {
+  /* === Colors === */
   --color-brown: #53423e;
   --color-lightBrown: #645550;
   --color-darkBrown: #2c2523;
@@ -17,25 +22,23 @@
   --color-grey: #626965;
   --color-lightGrey: #978580;
   --color-darkGrey: #3f4441;
-  --font-body: "Josefin Sans", "sans-serif";
-  --font-special: "Nunito", "sans-serif";
 
-  /* --shadow-cyanShadow: '0px 0px 20px 0px rgba(94,206,220,0.5)'; */
+  /* === Fonts === */
+  --font-body: "Josefin Sans", sans-serif;
+  --font-special: "Nunito", sans-serif;
 
-  /* cyanMediumShadow:'10px 10px 200px 150px rgba(94,206,220,0.5)'
+  /* === Shadows === */
+  --shadow-cyanShadow: 0px 0px 20px 0px rgba(94, 206, 220, 0.5);
 
-  orangeMediumShadow:'10px 10px 200px 150px rgba(240,169,79,0.5)' */
-
-  /* --screen-sm: '350px';
-  --screen-md: '768px';
-  --screen-lg: '1024px';
-  --screen-xl: '1280px';
-  --screen-2xl: '1536px'; */
-
+  /* === Breakpoints === */
+  --breakpoint-sm: 350px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
-
-
+/* Example global style */
 body {
-  @apply bg-darkBrown
+  @apply bg-darkBrown text-white font-body;
 }
