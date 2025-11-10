@@ -57,7 +57,7 @@ const projects = [
     name: 'Lef-Lif',
     year: 'Aug 2024',
     align: 'left',
-    image: '/website-img-1.jpg',
+    image: '/Lef-Lif.png',
     link: 'https://github.com/Shiksa/NGO-Waste-Food-Management',
   },
   {
