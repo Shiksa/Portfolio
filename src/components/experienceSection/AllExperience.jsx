@@ -51,16 +51,18 @@ const experiences = [
 
 const AllExperience = () => {
   return (
-    <div className="flex flex-col md:flex-row md:items-center md:justify-center md:gap-12 flex-wrap mt-5">
-      {experiences.map((experience, index) => (
-        <div key={index} className="relative flex items-center">
-          <SingleExperience experience={experience} />
-          {/* Show arrow except after the last item */}
-          {index < experiences.length - 1 && (
-            <FaArrowRight className="hidden md:inline-block text-4xl text-orange ml-6" />
-          )}
-        </div>
-      ))}
+    <div className="flex flex-col md:flex-row md:items-center md:justify-center md:gap-12 flex-wrap  mt-5">
+      {experiences.map((experience, index) => {
+        return (
+          <div key={index} className='flex items-center'>
+            <SingleExperience experience={experience} />
+            {/* Show arrow except after the last item */}
+            {index < experiences.length - 1 && (
+              <FaArrowRight className="lg:block sm:hidden text-4xl text-orange ml-6" />
+            )}
+          </div>
+        )
+      })}
     </div>
   );
 };
