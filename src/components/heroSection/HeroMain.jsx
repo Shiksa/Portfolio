@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroText from './HeroText'
-import HeroPic from './heroPic'
+import HeroPic from './HeroPic'
 
 
 const HeroMain = () => {
