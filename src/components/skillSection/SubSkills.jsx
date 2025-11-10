@@ -7,8 +7,7 @@ const SubSkills = () => {
   const repeatedWords = [...Array(4)].flatMap(() => words);
   return (
     <div className='border-y-2 border-lightGrey relative'>
-      <div className='absolute bg-gradient-to-r from-orange to-cyan opacity-50 w-full h-full
-    '></div>
+      <div className='absolute bg-gradient-to-r from-orange to-cyan opacity-50 w-full h-full'> </div>
       <div className='py-4'>
         <Marquee gradient={false} speed={50} pauseOnHover>
           {repeatedWords.map((word, i) => (

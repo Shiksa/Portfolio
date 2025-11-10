@@ -35,7 +35,18 @@ const experiences = [
       'Studied SDLC models including Agile.',
       'Gained SQL experience and RDBMS knowledge.'
     ]
-  }
+  },
+  {
+    job: 'Front-End Developer (Contractual)',
+    company: 'T2A Technologies Pvt. Ltd.',
+    date: '10/04/2025 - 10/10/2025',
+    responsibilities: [
+      'Worked as a contractual Frontend Developer.',
+      'Contributed to project tasks based on assigned scope.',
+      'Delivered work according to deadlines and project requirements.',
+      'Collaborated with the team for task completion and coordination.'
+    ]
+  },
 ];
 
 const AllExperience = () => {
