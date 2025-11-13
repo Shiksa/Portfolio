@@ -11,6 +11,10 @@ import { FaWordpress } from "react-icons/fa";
 import { TbFileTypeSql } from "react-icons/tb";
 import SingleSkill from './SingleSkill';
 
+import { motion } from 'motion/react';
+import { fadeIn } from '../../framerMotion/variants';
+import { div } from 'motion/react-client';
+
 
 const skills = [
   { skill: "HTML", icon: FaHtml5 },
@@ -30,7 +34,16 @@ const AllSkills = () => {
   return (
     <div>
       <div className='flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto'>
-        {skills.map((skill, index) => (<SingleSkill key={index} text={skill.skill} imgSvg={<skill.icon />} />))}
+        {skills.map((skill, index) => (
+          <motion.div
+            variants={fadeIn('up', `0.${index}`)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0 }}
+            key={index}>
+            <SingleSkill text={skill.skill} imgSvg={<skill.icon />} />
+          </motion.div>
+        ))}
       </div>
     </div>
   )

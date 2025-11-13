@@ -10,6 +10,9 @@ import { SiMongodb } from "react-icons/si";
 import { FaWordpress } from "react-icons/fa";
 import { TbFileTypeSql } from "react-icons/tb";
 
+import { motion } from 'motion/react';
+import { fadeIn } from '../../framerMotion/variants';
+
 const skills = [
   { skill: "HTML", icon: FaHtml5 },
   { skill: "CSS", icon: IoLogoCss3 },
@@ -27,10 +30,15 @@ const AllSkillsSm = () => {
   return (
     <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12'>
       {skills.map((skill, index) => (
-        <div key={index} className='flex flex-col items-center'>
+        <motion.div
+          variants={fadeIn('up', 0.2)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0 }}
+          key={index} className='flex flex-col items-center'>
           <skill.icon className='text-7xl text-orange' />
           <p className='text-center mt-4 text-white'>{skill.skill}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

@@ -2,6 +2,10 @@ import React from 'react';
 import SingleExperience from './SingleExperience';
 import { FaArrowRight } from "react-icons/fa6";
 
+import { motion } from 'motion/react';
+import { fadeIn } from '../../framerMotion/variants';
+import { div } from 'motion/react-client';
+
 const experiences = [
   {
     job: 'Industrial Training on MERN Stack',
@@ -54,13 +58,16 @@ const AllExperience = () => {
     <div className="flex flex-col md:flex-row md:items-center md:justify-center md:gap-12 flex-wrap  mt-5">
       {experiences.map((experience, index) => {
         return (
-          <div key={index} className='flex items-center'>
+          <motion.div key={index} variants={fadeIn('right', 0.2)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0 }} className='flex items-center'>
             <SingleExperience experience={experience} />
             {/* Show arrow except after the last item */}
             {index < experiences.length - 1 && (
               <FaArrowRight className="lg:block sm:hidden text-4xl text-orange ml-6" />
             )}
-          </div>
+          </motion.div>
         )
       })}
     </div>
