@@ -1,0 +1,67 @@
+/* Responsive wrapper based on image size */
+.wrapper {
+  position: relative;
+  display: inline-block;
+
+  /* Match PNG aspect ratio: width / height = 2464 / 3280 = 0.75 */
+  width: calc(450px * 0.75);
+  /* 337px width when image height = 450px */
+  height: 450px;
+}
+
+/* Image stays natural */
+.image {
+  height: 100%;
+  width: auto;
+  position: relative;
+  z-index: 5;
+}
+
+/* Background circle behind image (scaled relative) */
+.wrapper::after,
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -49.2% -46.5%;
+
+  /* Circle size slightly larger than PNG circle */
+  width: calc(450px * 0.70);
+  /* ~3% bigger */
+  height: calc(450px * 0.70);
+
+  border-radius: 50%;
+
+  background-image: conic-gradient(from var(--angle),
+      #fb9718,
+      #fac27b,
+      #15d1e9,
+      #88e5f0,
+      #fb9718);
+
+  animation: spin 6s linear infinite;
+  z-index: 1;
+}
+
+.wrapper::before {
+  filter: blur(20px);
+  opacity: 0.5;
+}
+
+/* Custom property for rotation */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
