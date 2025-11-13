@@ -10,6 +10,7 @@ import SubSkills from './components/skillSection/SubSkills'
 import ExperienceMain from './components/experienceSection/ExperienceMain'
 import ProjectMain from './components/projectSection/ProjectMain'
 import ContactMeMain from './components/contactMeSection/ContactMeMain'
+import FooterMain from './components/footer/FooterMain'
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       <ExperienceMain />
       <ProjectMain />
       <ContactMeMain />
-      <HelperSection />
+      <FooterMain />
+      {/* <HelperSection /> */}
     </main>
   )
 }
