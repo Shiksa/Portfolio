@@ -27,7 +27,7 @@ const HeroText = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0 }}
-        className='text-lg mt-4 text-white'>B.Tech (2025) in Information Technology <br /> From Government College of Engineering and Textile Technology,Serampore <br /> With an Aggregated CGPA of 8.55</motion.p>
+        className='text-lg mt-4 text-white'>B.Tech (2025) in Information Technology <br /> From Government College of Engineering and Textile Technology,Serampore <br /> With an Aggregated CGPA of 8.47</motion.p>
     </div>
   )
 }

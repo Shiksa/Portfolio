@@ -1,6 +1,6 @@
 import React from 'react'
 import { LuArrowDownRight } from "react-icons/lu";
-
+import { Link } from 'react-scroll';
 const AboutMeText = () => {
   return (
     <div className='flex flex-col md:items-start sm:items-center md:text-left sm:text-center'>
@@ -28,8 +28,10 @@ const AboutMeText = () => {
           I’m <span className="font-bold">actively seeking job opportunities</span> where I can apply my skills, contribute effectively, and grow as a frontend developer.
         </p>
         <button className='px-4 py-2 rounded-full text-xl font-bold text-white border-cyan border flex items-center gap-1 bg-gradient-to-r from-cyan to-orange hover:border-orange hover:scale-110 transition-all duration-500 hover:shadow-[0_0_20px_0_rgba(94,206,220,0.5)] cursor-pointer md:self-start sm:self-center'>
-          My Projects
-          <LuArrowDownRight />
+          <Link to='projects' smooth={true} spy={true} duration={500} offset={-130} className='flex justify-center items-center'>
+            My Projects
+            <LuArrowDownRight />
+          </Link>
         </button>
       </section>
     </div>
