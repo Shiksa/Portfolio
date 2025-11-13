@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  // Controlled form data
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,20 +22,17 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    setStatus("Sending...");
-
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          time: new Date().toLocaleString(), // send current date/time
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        time: new Date().toLocaleString(),
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
       .then(
         () => {
           setStatus("✅ Message sent successfully!");
@@ -52,7 +49,10 @@ const ContactForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      {status && (
+        <p className="text-center mt-3 text-white font-medium">{status}</p>
+      )}
+      <form action="" onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
           name="name"
@@ -93,11 +93,6 @@ const ContactForm = () => {
           {loading ? "Sending..." : "Send"}
         </button>
       </form>
-
-      {/* Status message below the form */}
-      {status && (
-        <p className="text-center mt-3 text-white font-medium">{status}</p>
-      )}
     </div>
   );
 };
