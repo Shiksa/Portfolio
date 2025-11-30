@@ -55,7 +55,7 @@ const IntroLoader = ({ onFinish }) => {
       animate={exitAnim ? "exit" : "initial"}
       style={{ transformOrigin: "top" }}
     >
-      <div className="flex flex-col gap-5 text-4xl font-bold">
+      <div className="flex flex-col gap-5 text-4xl font-bold justify-center">
         {lines.map((t, i) => (
           <motion.span
             key={i}
