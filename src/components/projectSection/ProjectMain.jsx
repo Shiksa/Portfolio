@@ -25,10 +25,22 @@ const projects = [
   //   link: 'https://kwinbee.com/',
   // },
   {
+    name: 'Munch Food Delivery App ',
+    year: 'July 2025',
+    image: '/Munch.webp',
+    link: 'https://fooddeliverymunch.netlify.app/',
+  },
+  {
     name: 'Rajnandini Rice',
     year: 'June 2025',
     image: '/RajnandiniRice.webp',
     link: 'https://rajnandinirice.com/',
+  },
+  {
+    name: 'Do Deck ToDo App',
+    year: 'June 2025',
+    image: '/DoDeck.webp',
+    link: 'https://do-deck.netlify.app/',
   },
   {
     name: 'Med Buddy',
