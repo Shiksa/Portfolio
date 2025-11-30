@@ -10,7 +10,7 @@ const experiences = [
   {
     job: 'Front-End Developer (Contractual)',
     company: 'T2A Technologies Pvt. Ltd.',
-    date: '10/04/2025 - 10/10/2025',
+    date: '03/02/2025 - Present',
     responsibilities: [
       'Worked as a contractual Frontend Developer.',
       'Contributed to project tasks based on assigned scope.',
