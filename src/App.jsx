@@ -13,6 +13,7 @@ import ContactMeMain from './components/contactMeSection/ContactMeMain';
 import FooterMain from './components/footer/FooterMain';
 
 import IntroLoader from './components/introAnimation/IntroLoader';
+import CanvasCursor from './components/CanvasCursor';
 
 const App = () => {
   const [introDone, setIntroDone] = useState(false);
@@ -28,6 +29,8 @@ const App = () => {
 
   return (
     <main className="font-body relative">
+
+      <CanvasCursor />
 
       {/* INTRO OVERLAY */}
       <IntroLoader onFinish={() => setIntroDone(true)} />
