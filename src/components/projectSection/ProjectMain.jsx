@@ -5,7 +5,12 @@ import { motion } from 'motion/react';
 import { fadeIn } from '../../framerMotion/variants';
 
 const projects = [
-
+  {
+    name: 'Parivaar Rice',
+    year: 'Dec 2025',
+    image: '\ParivaarRice.png',
+    link: 'https://parivaar-rice.netlify.app/',
+  },
   {
     name: 'Shriyam Herbal Care',
     year: 'Oct 2025',
@@ -18,12 +23,12 @@ const projects = [
     image: '\GeniquestPharma.webp',
     link: 'https://geniquestpharma.com/',
   },
-  // {
-  //   name: 'Kwinbee',
-  //   year: 'Jul 2025',
-  //   image: '/KwinBee.webp',
-  //   link: 'https://kwinbee.com/',
-  // },
+  {
+    name: 'Kwinbee',
+    year: 'Jul 2025',
+    image: '/KwinBee.webp',
+    link: 'https://kwinbee.com/',
+  },
   {
     name: 'Munch Food Delivery App ',
     year: 'July 2025',

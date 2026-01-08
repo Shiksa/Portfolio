@@ -32,7 +32,7 @@ const experiences = [
   {
     job: 'Freelance Web Developer',
     company: 'Plazma Digital',
-    date: '15/10/2024 - Present',
+    date: '15/12/2024 - Present',
     responsibilities: [
       'Developed responsive frontend interfaces.',
       'Attended client meetings and handled requirement analysis.',
