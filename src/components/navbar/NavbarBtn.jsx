@@ -4,7 +4,7 @@ import { LuArrowDownRight } from "react-icons/lu";
 const NavbarBtn = () => {
   return (
     <a
-      href="/cv.pdf"
+      href="/Sayantan_Pakhira_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >

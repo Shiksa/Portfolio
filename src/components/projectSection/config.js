@@ -1,0 +1,80 @@
+export const projects = [
+  {
+    name: 'Parivaar Rice',
+    year: 'Dec 2025',
+    image: '\ParivaarRice.png',
+    link: 'https://parivaar-rice.netlify.app/',
+  },
+  {
+    name: 'Shriyam Herbal Care',
+    year: 'Oct 2025',
+    image: '\ShriyamPharma.webp',
+    link: 'https://shriyamcare.com/',
+  },
+  {
+    name: 'Geniquest Pharma',
+    year: 'Aug 2025',
+    image: '\GeniquestPharma.webp',
+    link: 'https://geniquestpharma.com/',
+  },
+  {
+    name: 'Kwinbee',
+    year: 'Jul 2025',
+    image: '/KwinBee.webp',
+    link: 'https://kwinbee.com/',
+  },
+  {
+    name: 'Munch Food Delivery App ',
+    year: 'July 2025',
+    image: '/Munch.webp',
+    link: 'https://fooddeliverymunch.netlify.app/',
+  },
+  {
+    name: 'Rajnandini Rice',
+    year: 'June 2025',
+    image: '/RajnandiniRice.webp',
+    link: 'https://rajnandinirice.com/',
+  },
+  {
+    name: 'Do Deck ToDo App',
+    year: 'June 2025',
+    image: '/DoDeck.webp',
+    link: 'https://do-deck.netlify.app/',
+  },
+  {
+    name: 'Med Buddy',
+    year: 'April 2025',
+    image: '/MedBuddy.webp',
+    link: 'https://github.com/Shiksa/2k25-Final-Year-B.Tech-Project',
+  },
+  {
+    name: 'To-Do Buddy',
+    year: 'Feb 2025',
+    image: '/ToDoBuddy.webp',
+    link: 'https://to-do-list-shiksas-projects.vercel.app/',
+  },
+  {
+    name: 'Currency Converter',
+    year: 'Dec 2024',
+    image: '/CurrencyConverter.webp',
+    link: 'https://currency-converter-webapp-sooty.vercel.app/',
+  },
+  {
+    name: 'Lef-Lif',
+    year: 'Aug 2024',
+    image: '/Lef-Lif.webp',
+    link: 'https://github.com/Shiksa/NGO-Waste-Food-Management',
+  },
+  {
+    name: 'Rock_Paper_Scissor',
+    year: 'Nov 2024',
+    image: '/RockPaperScisor.webp',
+    link: 'https://rock-paper-scissor-one-pied.vercel.app/',
+  },
+  {
+    name: 'Tic Tac Toe',
+    year: 'Apr 2024',
+    image: '/TicTacToe.webp',
+    link: 'https://shikshatictactoe.netlify.app/',
+  },
+]
