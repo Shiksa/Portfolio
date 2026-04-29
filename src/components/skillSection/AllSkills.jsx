@@ -9,6 +9,10 @@ import { FaJava } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaWordpress } from "react-icons/fa";
 import { TbFileTypeSql } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
 import SingleSkill from './SingleSkill';
 
 import { motion } from 'motion/react';
@@ -20,12 +24,16 @@ const skills = [
   { skill: "HTML", icon: FaHtml5 },
   { skill: "CSS", icon: IoLogoCss3 },
   { skill: "JavaScript", icon: IoLogoJavascript },
+  { skill: "TypeScript", icon: SiTypescript },
   { skill: "ReactJS", icon: FaReact },
+  { skill: "NextJS", icon: RiNextjsFill },
   { skill: "Redux", icon: SiRedux },
+  { skill: "TailwindCSS", icon: RiTailwindCssFill },
+  { skill: "NodeJS", icon: DiNodejs },
+  { skill: "ExpressJS", icon: SiExpress },
   { skill: "Mongo DB", icon: SiMongodb },
   { skill: "Core JAVA", icon: FaJava },
   { skill: "SQL", icon: TbFileTypeSql },
-  { skill: "TailwindCSS", icon: RiTailwindCssFill },
   { skill: "Wordpress", icon: FaWordpress },
 ]
 
@@ -36,7 +44,7 @@ const AllSkills = () => {
       <div className='flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto'>
         {skills.map((skill, index) => (
           <motion.div
-            variants={fadeIn('up', `0.${index}`)}
+            variants={fadeIn('up', (index * 0.1).toFixed(1))}
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0 }}
